@@ -338,7 +338,7 @@
 % Render a courseworkentry in the scolarship environment
 % Usage: \courseworkentry{<date>}{<description>}
 \newcommand\keywordsentry[2]{
-        \textbf{#1} &   #2\\ 
+        \textbf{\textcolor{white}{#1}} &   #2\\ 
     }
 
 % Define a new column type for the coursework environment
@@ -573,8 +573,9 @@
     {
         \hfill\\
         \hspace{1em}
-        \textbf{#1} - \emph{#2}, \textsc{#3}\\
-        \faQuoteLeft \ \ \emph{#4} \faQuoteRight\\
+        \textbf{#1} \newline
+        \emph{#2}, \textsc{#3}\\
+        %\faQuoteLeft \ \ \emph{#4} \faQuoteRight\\
 }
 
 % -------- END REFERENCES-----------------------------------------------
